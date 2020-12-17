@@ -1,0 +1,65 @@
+.secondintro {
+  grid-column: 5/-1;
+  grid-row: 1/-1;
+
+  background: url("/img/real.png");
+  background-position: top;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(6, auto);
+  align-items: center;
+  justify-items: center;
+
+  &__svgbg{
+    display: inline-block;
+    background-color: $color-primary-dark;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+    // padding: 1.25rem;
+
+    &--js{
+      grid-column: 6/7;
+      grid-row: 3/4;
+    
+    }
+    &--css{
+      grid-column: 1/2;
+      grid-row: 1/2;
+    
+    }
+
+    &--sass{
+      grid-column: 6/7;
+      grid-row: 1/2;
+    
+    }
+    &--php{
+      grid-column: 6/7;
+      grid-row: 5/6;
+    }
+    &--laravel{
+      grid-column: 1/2;
+      grid-row: 3/4;
+    
+    }
+    &--vue{
+      grid-column: 1/2;
+      grid-row: 5/6;
+    
+    }
+    &--jquery{
+      display:none;
+    }
+  }
+  svg {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
