@@ -12,6 +12,9 @@
 <path d="M0 32h13l-5-5 6-6-3-3-6 6-5-5z"></path>
 <path d="M0 0v13l5-5 6 6 3-3-6-6 5-5z"></path>
 </symbol>
+<symbol id="icon-folder-open" viewBox="0 0 32 32">
+<path d="M26 30l6-16h-26l-6 16zM4 12l-4 18v-26h9l4 4h13v4z"></path>
+</symbol>
 <symbol id="icon-new-tab" viewBox="0 0 32 32">
 <path d="M6 2v24h24v-24h-24zM28 24h-20v-20h20v20zM4 28v-21l-2-2v25h25l-2-2h-21z"></path>
 <path d="M11 8l5 5-6 6 3 3 6-6 5 5v-13z"></path>
