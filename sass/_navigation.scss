@@ -22,6 +22,9 @@
         &--button {
             align-self: center;
         }
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
     }
     &__link:link,
     &__link:visited {
@@ -38,6 +41,7 @@
     &__link:active,
     &__link:hover {
         color: $color-primary-dark;
+        background-color: rgba($color-primary, .2);
     }
     // &__socials {
     //     font-size: 1rem;

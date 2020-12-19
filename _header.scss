@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 5rem;
+    transition: all .6s;
+    // background-color: #F1F1F1; 
+    background-color: #24292E;
+    width: 100%;
+    z-index: 1000;
+    background-image: linear-gradient(to right, rgba($color-primary-dark, .7)1%, rgba(black, .9)), url(/img/bglarge.jpg);
+    .resume-btn {
+        align-self: start;
+        border: 1px solid #fff;
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+}

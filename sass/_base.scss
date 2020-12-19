@@ -2,13 +2,14 @@
 // $color-primary:rgba(0, 0, 0, 0.863);
 $color-primary:#24292E;
 $color-primary-dark: #b81226;
+$color-primary-light:#DF162D;
 $color-call-action: #3690C5;
 $color-secondary: #96A7D5;
 $color-text: #AC0C5C;
 $color-call-2: #DFA7D5;
-$font-primary: "Roboto Mono",
-monospace;
-$font-display: "Josefin Sans",
+$font-primary: 'Poppins',
+sans-serif;
+$font-display: 'Poppins',
 sans-serif;
 $font-brand: 'Cinzel Decorative',
 cursive;
@@ -28,6 +29,7 @@ $bp-small: 37.5em; //600px
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;
     }
@@ -35,58 +37,29 @@ html {
 
 body {
     font-family: $font-primary;
-    color: $color-primary;
-    // font-weight: 300;
+    color: #fff;
     line-height: 1.3;
-    padding: 0 5rem;
     min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #F1F1F1; // /justify-content: space-between;
+    // background-color: #F1F1F1; // /justify-content: space-between;
     // padding-top: 50px;
 }
 
-.container {
-    // display: grid;
-    // grid-template-rows: 8rem auto;
-    // grid-template-columns: [full-start] 1fr [center-start] repeat( 8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-    // background-color: #fff; 
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // -webkit-box-align: center;
-    -webkit-box-pack: justify;
-    width: 100%;
-    height: 8rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 5rem;
-    transition: top .6s;
-    // background-color: #F1F1F1; 
-    background-color: #24292E;
-    width: 100%;
-    z-index: 1000;
-}
-
 main {
-    margin-top: 5.4rem; // grid-column: center-start/center-end;
-    // grid-row: 2/3;
-    // counter-reset: section;
-    // background-color: $color-primary;
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-top: 8rem;
+    flex: 0 0 100%;
     &> :not(:last-child) {
-        margin-bottom: 5rem;
+        border-bottom: 1px solid #fff;
     }
 }
 
 section {
-    margin: 0px auto;
+    // margin: 0px auto;
     // padding: 100px 0px;
-    max-width: 100rem;
+    // max-width: 100rem;
 }

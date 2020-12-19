@@ -1,0 +1,13 @@
+.section__five {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    // align-content: space-around;
+    height: 50vh;
+    p,
+    button {
+        margin-bottom: 3rem;
+    }
+}

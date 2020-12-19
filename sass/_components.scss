@@ -18,7 +18,7 @@
             background-image: url(../img/svg/arrow-right2.svg);
             background-size: cover;
             @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-                background-color: $color-text;
+                background-color: $color-primary-dark;
                 mask-image: url(../img/svg/arrow-right2.svg);
                 mask-size: cover;
                 -webkit-mask-image: url(../img/svg/arrow-right2.svg);
@@ -234,4 +234,73 @@
     &:active {
         transform: translateY(-1rem);
     }
+}
+
+.container {
+    width: 100%;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about {
+    &__text {
+        &> :not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__pic {
+        // max-width: 30rem; 
+        &--wrapper {
+            background-color: rgba($color-primary-dark, .5);
+            border-radius: 5px;
+            transition: all 0.5s;
+        }
+    }
+    &__picture {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        mix-blend-mode: multiply;
+        filter: grayscale(100%) contrast(1);
+        transition: all 1s;
+        &:hover {
+            mix-blend-mode: normal;
+            filter: none;
+        }
+    }
+}
+
+.tabcontent {
+    color: black;
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    // padding-left: 3rem;
+    font-weight: 400;
+    line-height: 3rem; // border: 1px solid #ffffff;
+    .company {
+        color: $color-primary-dark;
+    }
+    .range {
+        margin-bottom: 3rem;
+        color: $color-primary;
+        font-size: 1.3rem;
+    }
+    .list__item {
+        flex: 0 0 100%;
+        font-weight: 500;
+    }
+    h3 {
+        margin-bottom: 5px;
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: #fff;
+    }
+}
+
+.svg__3 {
+    fill: white;
 }
