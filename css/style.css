@@ -498,8 +498,6 @@ main {
         width: 100%;
         height: 100%;
         cursor: pointer; }
-      .section__three .tabs__item.active {
-        z-index: 6; }
     .section__three .tabs__link--1 {
       z-index: 4; }
   .section__three .experince {
