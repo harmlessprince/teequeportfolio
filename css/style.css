@@ -41,8 +41,7 @@ main {
   font-weight: 400; }
 
 .sm-heading {
-  font-size: clamp(1.4rem, 5vw, 1.6rem);
-  margin-bottom: 1rem; }
+  font-size: 1.7rem; }
 
 .about_paragrapgh {
   color: #24292E;
@@ -90,6 +89,12 @@ main {
 .ptb {
   padding-top: 10rem;
   padding-bottom: 10rem; }
+
+.fw-4 {
+  font-weight: 400; }
+
+.fw-5 {
+  font-weight: 500; }
 
 .navigation {
   display: flex;
@@ -260,6 +265,9 @@ main {
 
 .flexend {
   justify-content: flex-end; }
+
+.self-align-end {
+  align-self: flex-end; }
 
 .navbrand {
   align-self: center; }
@@ -490,9 +498,8 @@ main {
   position: relative;
   margin-top: 5rem; }
   .cards .card {
-    background-color: #fff;
+    background-color: #5E3713;
     display: flex;
-    border: 1px solid #b81226;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -502,37 +509,46 @@ main {
     box-shadow: 0 2rem 3rem -1.5rem rgba(36, 41, 46, 0.4);
     transition: all .3s; }
     .cards .card:not(:last-child) {
-      margin-bottom: 1.5rem; }
+      margin-bottom: 3rem; }
+    .cards .card > * {
+      margin-bottom: 2rem; }
     .cards .card__header {
-      margin-bottom: 2.5rem;
       display: flex;
       justify-content: center;
       align-items: center; }
+      .cards .card__header:not(:last-child) {
+        margin-bottom: 3.5rem; }
       .cards .card__header--folder {
         margin-right: auto; }
         .cards .card__header--folder__icon {
           width: 4rem;
           height: 4rem;
           fill: transparent;
-          stroke: rgba(184, 18, 38, 0.8);
-          margin-right: auto; }
+          stroke: #DF7731; }
+      .cards .card__header--links > *:not(:last-child) {
+        margin-right: 2rem; }
       .cards .card__header--links__icon {
-        width: 4rem;
-        height: 1rem; }
+        width: 2rem;
+        height: 2rem;
+        fill: #fff; }
     .cards .card__title {
       margin: 0px 0px 1rem;
       font-size: 2.2rem; }
     .cards .card__description {
-      font-size: 1.5rem; }
-      .cards .card__description p {
-        margin-bottom: 1rem; }
-    .cards .card__tech-list {
+      font-size: 1.5rem;
+      line-height: 2rem; }
+    .cards .card__tech--list {
       list-style-type: none;
-      display: flex; }
-      .cards .card__tech-list > :not(:last-child) {
-        margin-right: 2rem; }
+      display: flex;
+      font-size: 1.3rem; }
+      .cards .card__tech--list > :not(:last-child) {
+        margin-right: 1rem; }
     .cards .card:hover, .cards .card:active {
       transform: translateY(-1rem); }
+
+.projects {
+  display: flex;
+  flex-direction: column; }
 
 .section__four {
   display: flex;

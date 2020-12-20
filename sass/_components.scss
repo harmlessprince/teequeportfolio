@@ -168,6 +168,10 @@
     justify-content: flex-end;
 }
 
+.self-align-end {
+    align-self: flex-end;
+}
+
 .navbrand {
     align-self: center;
     &:link,
