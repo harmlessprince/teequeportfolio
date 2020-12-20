@@ -361,7 +361,7 @@ main {
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
-  height: calc(100vh - 8rem); }
+  min-height: calc(100vh - 8rem); }
   .section__one .hero-content {
     display: flex;
     align-content: center; }
