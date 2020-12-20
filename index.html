@@ -15,60 +15,47 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="img/png" href="img/favicon.png">
     <title>Taofeeq Portfolio</title>
+
 </head>
 
 <body class="">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <header class="header" id="header">
-        <nav class="navigation" id="navigation">
-            <a href="" class="navbrand"> OlaTeeque</a>
-            <!-- <img class="navigation__logo" src="img/logo.png" alt="Olateeque"> -->
+        <nav class="navigation" id="navigation"><a href="" class="navbrand">OlaTeeque</a>
+            <!-- <img class="navigation__logo" src="img/logo.png" alt="Olateeque">-->
             <ul class="navigation__items">
-                <li class="navigation__item"><a href="#section1" class="navigation__link">About</a></li>
-                <li class="navigation__item"><a href="#section2" class="navigation__link">Experience</a></li>
-                <li class="navigation__item"><a href="#section3" class="navigation__link">Works</a></li>
-                <li class="navigation__item"><a href="#section4" class="navigation__link">Contact</a></li>
-                <li class="navigation__item">
-                    <button class="btn resume-btn ">Resume</button>
-                </li>
-
+                <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#experince" class="navigation__link">Experience</a></li>
+                <li class="navigation__item"><a href="#works" class="navigation__link">Works</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                <li class="navigation__item"><button class="btn resume-btn ">Resume</button></li>
             </ul>
-
         </nav>
     </header>
     <main>
-
         <section class="section section__one ptb" id="">
-
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-content__introduction">
                         <h1 class="big-heading">Hi! I'm Adewuyi Taofeeq</h1>
                         <h4 class="mid-heading">Backend Developer/IT Technician & Technical Writer</h4>
-                        <p class="summary "> For a year plus, I have specilaised in back-end development (and occasionally designing) exceptional websites, web apps and providing IT support for both individual and organizations </p>
-                        <button class="btn hero-content__introduction--btn ">get in touch</button>
-                    </div>
-                    <div class="hero-content__image">
-                        <img src="img/programmer.svg" alt="Trulli" style="width: 100%;">
-                    </div>
+                        <p class="summary ">For 1+year(s), I have specilaised in back-end development (and occasionally designing) exceptional websites, web apps and providing IT support for both individual and organizations for over 3+years</p><button class="btn hero-content__introduction--btn ">get in touch</button></div>
+                    <div class="hero-content__image"><img src="img/programmer.svg" alt="Trulli" style="width: 100%;"></div>
                 </div>
             </div>
-
         </section>
-        <section class="section section__two ptb" id="section1">
-
+        <section class="section section__two ptb" id="about">
             <div class="container">
                 <h2 class="about__heading numbered-heading mb-sm ">About Me</h2>
                 <div class="about">
-                    <div class="about__image">
-                        <img src="img/undrawimage.svg " alt=" " class="about__image--picture ">
-                    </div>
+                    <div class="about__image"><img src="img/undrawimage.svg " alt=" " class="about__image--picture "></div>
                     <div class="about__introduction">
-                        <p class="about__introduction--info ">
-                            A computer science graduate, software developer and IT support specilist based in Nigeria. I enjoy creating things that live on the internet, wether that be websites, applications or anything between.
-                        </p>
+                        <p class="about__introduction--info ">A computer science graduate, software developer and IT support specilist based in Nigeria. I enjoy creating things that live on the internet, wether that be websites, applications or anything between. </p>
                         <p class="about__introduction--info ">My goal is to always build products that help solve tasks that can be automated and make life easier. I derive great joy in providing IT support to put smile on the faces of cleint</p>
-
-
                         <p class="about__introduction--info ">Here are a few technologies I've been working with recently:</p>
                         <ul class="list info ">
                             <li class="list__item ">PHP</li>
@@ -79,392 +66,198 @@
                             <li class="list__item ">JQuery</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
-
-
-
         </section>
-        <section class="section section__three ptb" id="section2">
+        <section class="section section__three ptb" id="experince">
             <div class="container">
                 <h2 class="numbered-heading mb-sm section__three__heading">Where I've Worked</h2>
                 <div class="experince">
-
-
-
                     <div>
                         <nav>
                             <ul class="tabs">
-                                <li class="tabs__item tablink ">
-                                    <a class=" tabs__link--1" onclick="openPage( event,'auxano') ">
-                                        <span>Auxano</span>
-                                        <svg viewBox="0 0 122 40"> 
-                                    <use xlink:href="img/sprite.svg#tab-shape "></use>
-                                  </svg>
-
-                                    </a>
-                                </li>
-                                <li class="tabs__item tablink">
-                                    <a class="tabs__link--2" onclick="openPage( event ,'powerex') ">
-                                        <span>Powerex</span>
-                                        <svg viewBox="0 0 122 40">
-                                    <use xlink:href="img/sprite.svg#tab-shape "></use>
-                                  </svg>
-                                    </a>
-                                </li>
-                                <li class="tabs__item tablink active">
-                                    <a class="tabs__link--3" onclick="openPage(event ,'alabian') ">
-                                        <span>Alabian</span>
-                                        <svg viewBox="0 0 122 40">
-                                <use xlink:href="img/sprite.svg#tab-shape "></use>
-                              </svg>
-                                    </a>
-                                </li>
-
-
+                                <li class="tabs__item"><a class=" tabs__link--1 tablink" onclick="openPage( event,'auxano') "><span>Auxano</span><svg viewBox="0 0 122 40"><use xlink:href="img/sprite.svg#tab-shape "></use></svg></a></li>
+                                <li class="tabs__item"><a class="tabs__link--2 tablink" onclick="openPage( event ,'powerex') "><span>Powerex</span><svg viewBox="0 0 122 40"><use xlink:href="img/sprite.svg#tab-shape "></use></svg></a></li>
+                                <li class="tabs__item"><a class="tabs__link--3 tablink active" onclick="openPage(event ,'alabian') "><span>Alabian</span><svg viewBox="0 0 122 40"><use xlink:href="img/sprite.svg#tab-shape "></use></svg></a></li>
                             </ul>
                         </nav>
-
-                        <div id="auxano" class="tabcontent w3-animate-zoom">
-                            <h3>
-                                <span class="role ">IT Support (Intern)</span>
-                                <span class="company ">
-                            @
-                            <a href="# " class="inline-link ">Auxano Solutions Technology</a>
-                            </span>
-                            </h3>
+                        <div id="auxano" class="tabcontent w3-animate-left">
+                            <h3><span class="role ">IT Support (Intern)</span><span class="company ">@ <a href="# " class="inline-link ">Auxano Solutions Technology</a></span></h3>
                             <p class="range ">June 2018 - December 2018</p>
                             <div>
                                 <ul class="list">
-                                    <li class="list__item ">
-                                        Installing and configuring hardware and software components to ensure usability.</li>
-                                    <li class="list__item ">
-
-                                        Designing and implementing new network solutions and/or improving the efficiency of current networks
-
-                                    </li>
+                                    <li class="list__item ">Installing and configuring hardware and software components to ensure usability.</li>
+                                    <li class="list__item ">Designing and implementing new network solutions and/or improving the efficiency of current networks </li>
                                     <li class="list__item ">Configuring firewalls, routing and switching to maximize network efficiency and security</li>
                                     <li class="list__item ">Upgrading the entire system to enable compatible software on all computers.</li>
                                     <li class="list__item ">Installing and upgrading anti-virus software to ensure security at the user level.</li>
                                     <li class="list__item ">Conducting daily backup operations.</li>
                                 </ul>
                             </div>
-
                         </div>
-
-                        <div id="powerex" class="tabcontent w3-animate-zoom">
-                            <h3>
-                                <span class="role ">IT Support Specialist</span>
-                                <span class="company ">
-                            @
-                            <a href="# " class="inline-link ">Powerex Nigeria Limited </a>
-                        </span>
-                            </h3>
+                        <div id="powerex" class="tabcontent w3-animate-left">
+                            <h3><span class="role ">IT Support Specialist</span><span class="company ">@ <a href="# " class="inline-link ">Powerex Nigeria Limited </a></span></h3>
                             <p class="range ">January 2020 - March 2020</p>
                             <div>
                                 <ul class="list ">
                                     <li class="list__item ">Monitoring and maintaining company's server</li>
-                                    <li class="list__item ">Monitoring and maintaining computer systems and networks
-                                    </li>
-                                    <li class="list__item ">Responding in a timely manner to service issues and requests
-                                    </li>
-                                    <li class="list__item ">Setting up accounts for new users on the server for both new and old employees
-                                    </li>
+                                    <li class="list__item ">Monitoring and maintaining computer systems and networks </li>
+                                    <li class="list__item ">Responding in a timely manner to service issues and requests </li>
+                                    <li class="list__item ">Setting up accounts for new users on the server for both new and old employees </li>
                                 </ul>
                             </div>
-
                         </div>
-
-                        <div id="alabian" class="tabcontent w3-animate-zoom" style="display: inline-block;">
-                            <h3>
-                                <span class="role">Software Developer</span>
-                                <span class="company ">
-                            @
-                            <a href="# " class="inline-link">Alabian Solutions Technology</a>
-                        </span>
-                            </h3>
+                        <div id="alabian" class="tabcontent w3-animate-left" style="display: inline-block;">
+                            <h3><span class="role">Software Developer</span><span class="company ">@ <a href="# " class="inline-link">Alabian Solutions Technology</a></span></h3>
                             <p class="range ">June 2020 - Present</p>
                             <div>
                                 <ul class="list ">
                                     <li class="list__item ">Write modern, performant, maintainable code for a diverse array of client and internal projects</li>
-                                    <li class="list__item ">
-
-                                        Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness
-
-
-                                    </li>
+                                    <li class="list__item ">Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness </li>
                                     <li class="list__item ">Developed and maintained code for in-house and client web applicatons primarily using HTML, CSS, Sass, JavaScript, jQuery, Laravel and PHP</li>
                                     <li class="list__item ">Collaborating with other developers to create web applications</li>
-                                    <li class="list__item ">Attending and contributing to development team meetings
-                                    </li>
+                                    <li class="list__item ">Attending and contributing to development team meetings </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="experince__image">
-                        <img src="img/experince.svg " alt=" " class="experince__image--picture ">
-                    </div>
-
+                    <div class="experince__image"><img src="img/experince.svg " alt=" " class="experince__image--picture "></div>
                 </div>
             </div>
         </section>
-        <section class="section section__four " id="section3">
+        <section class="section section__four ptb" id="works">
             <div class="container">
-                <h2 class="numbered-heading ">Some Things I've Built</h2>
-                <div class="project ">
-                    <div class="project-content ">
-                        <p class="project-overline ">Featured Project</p>
-                        <h3 class="project-title ">Nexter</h3>
-                        <div class="project-description ">
-                            <p>
-                                A landing page for real estate organization
-                            </p>
+                <div class="projects">
+                    <h2 class="numbered-heading ">Some Things I've Built</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <header>
+                                <div class="card__header">
+                                    <div class="card__header--folder">
+                                        <svg class="card__header--folder__icon">
+                                            <use xlink:href="img/sprite.svg#icon-folder-open"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="card__header--links">
+                                        <a href="" class="git">
+                                            <svg class="card__header--links__icon">
+                                                <use xlink:href="img/sprite.svg#icon-github"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="demo">
+                                            <svg class="card__header--links__icon">
+                                                <use xlink:href="img/sprite.svg#icon-new-tab"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="card__title">Integrating </h3>
+                                <div class="card__description ">
+                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="card__tech--list ">
+                                    <li>Algolia</li>
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </footer>
                         </div>
-                        <ul class="project-tech-list ">
-                            <li>html</li>
-                            <li>css</li>
-                            <li>sass</li>
-                        </ul>
-                        <div class="project-links ">
-
-                            <svg class=" ">
-                    <use xlink:href="img/sprite.svg#icon-new-tab "></use>
-                </svg>
-
-                            <svg class="navigation__social--2 ">
-                    <use xlink:href="img/sprite.svg#icon-github "></use>
-                </svg>
-
-
-
+                        <!-- <div class="project__card">
+                            <header>
+                                <div class="project__card--top">
+                                    <div class="folder"><svg class="folder__icon"><use xlink:href="img/sprite.svg#icon-folder-open"></use></svg></div>
+                                    <div class="project-links"><a href="" class="git"><svg class="header__icons"><use xlink:href="img/sprite.svg#icon-github"></use></svg></a><a href="" class="demo"><svg class="header__icons"><use xlink:href="img/sprite.svg#icon-new-tab"></use></svg></a></div>
+                                </div>
+                                <h3 class="project__card--title">Integrating </h3>
+                                <div class="project__card--description ">
+                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project__card--tech-list ">
+                                    <li>Algolia</li>
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </footer>
                         </div>
-                    </div>
-
-                    <div class="project-image ">
-                        <img src="/img/nexter1.png " alt=" " class="pimage ">
+                        <div class="project__card">
+                            <header>
+                                <div class="project__card--top">
+                                    <div class="folder"><svg class="folder__icon"><use xlink:href="img/sprite.svg#icon-folder-open"></use></svg></div>
+                                    <div class="project-links"><a href="" class="git"><svg class="header__icons"><use xlink:href="img/sprite.svg#icon-github"></use></svg></a><a href="" class="demo"><svg class="header__icons"><use xlink:href="img/sprite.svg#icon-new-tab"></use></svg></a></div>
+                                </div>
+                                <h3 class="project__card--title">Integrating </h3>
+                                <div class="project__card--description ">
+                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project__card--tech-list ">
+                                    <li>Algolia</li>
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </footer>
+                        </div>
+                        <div class="project__card">
+                            <header>
+                                <div class="project__card--top">
+                                    <div class="folder"><svg class="folder__icon"><use xlink:href="img/sprite.svg#icon-folder-open"></use></svg></div>
+                                    <div class="project-links"><a href="" class="git"><svg class="header__icons"><use xlink:href="img/sprite.svg#icon-github"></use></svg></a><a href="" class="demo"><svg class="header__icons"><use xlink:href="img/sprite.svg#icon-new-tab"></use></svg></a></div>
+                                </div>
+                                <h3 class="project__card--title">Integrating </h3>
+                                <div class="project__card--description ">
+                                    <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project__card--tech-list ">
+                                    <li>Algolia</li>
+                                    <li>WordPress</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </footer>
+                        </div> -->
                     </div>
                 </div>
-                <div class="project2 ">
-                    <div class="project2-content ">
-                        <p class="project-overline ">Featured Project</p>
-                        <h3 class="project-title ">Payroll Managment System</h3>
-                        <div class="project-description ">
-                            <p>
-                                A landing page for real estate organization
-                            </p>
-                        </div>
-                        <ul class="project-tech-list flexstar '' ">
-                            <li>Bootstap</li>
-                            <li>html/(S)CSS</li>
-                            <li>jQuery</li>
-                            <li>Laravel</li>
-                            <li>JavaScript</li>
-                        </ul>
-                        <div class="project-links flexstart ">
 
-                            <svg class=" ">
-                    <use xlink:href="img/sprite.svg#icon-new-tab "></use>
-                </svg>
-
-                            <svg class="navigation__social--2 ">
-                    <use xlink:href="img/sprite.svg#icon-github "></use>
-                </svg>
-
-
-
-                        </div>
-                    </div>
-                    <div class="project2-image ">
-                        <img src="/img/payroll.png " alt=" " class="pimage ">
-                    </div>
-                </div>
-                <div class="project__3 ">
-
-                </div>
-                <div class="other__projects">
-                    <div class="project__card">
-                        <header>
-                            <div class="project__card--top">
-                                <div class="folder">
-                                    <svg class="folder__icon">
-                                    <use xlink:href="img/sprite.svg#icon-folder-open"></use>
-                                </svg>
-                                </div>
-                                <div class="project-links">
-                                    <a href="" class="git">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-github"></use>
-                                    </svg>
-                                    </a>
-                                    <a href="" class="demo">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-new-tab"></use>
-                                    </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="project__card--title">Integrating </h3>
-                            <div class="project__card--description ">
-                                <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
-                            </div>
-                        </header>
-                        <footer>
-                            <ul class="project__card--tech-list ">
-                                <li>Algolia</li>
-                                <li>WordPress</li>
-                                <li>PHP</li>
-                            </ul>
-                        </footer>
-                    </div>
-
-                    <div class="project__card">
-                        <header>
-                            <div class="project__card--top">
-                                <div class="folder">
-                                    <svg class="folder__icon">
-                                    <use xlink:href="img/sprite.svg#icon-folder-open"></use>
-                                </svg>
-                                </div>
-                                <div class="project-links">
-                                    <a href="" class="git">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-github"></use>
-                                    </svg>
-                                    </a>
-                                    <a href="" class="demo">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-new-tab"></use>
-                                    </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="project__card--title">Integrating </h3>
-                            <div class="project__card--description ">
-                                <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
-                            </div>
-                        </header>
-                        <footer>
-                            <ul class="project__card--tech-list ">
-                                <li>Algolia</li>
-                                <li>WordPress</li>
-                                <li>PHP</li>
-                            </ul>
-                        </footer>
-                    </div>
-                    <div class="project__card">
-                        <header>
-                            <div class="project__card--top">
-                                <div class="folder">
-                                    <svg class="folder__icon">
-                                    <use xlink:href="img/sprite.svg#icon-folder-open"></use>
-                                </svg>
-                                </div>
-                                <div class="project-links">
-                                    <a href="" class="git">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-github"></use>
-                                    </svg>
-                                    </a>
-                                    <a href="" class="demo">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-new-tab"></use>
-                                    </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="project__card--title">Integrating </h3>
-                            <div class="project__card--description ">
-                                <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
-                            </div>
-                        </header>
-                        <footer>
-                            <ul class="project__card--tech-list ">
-                                <li>Algolia</li>
-                                <li>WordPress</li>
-                                <li>PHP</li>
-                            </ul>
-                        </footer>
-                    </div>
-                    <div class="project__card">
-                        <header>
-                            <div class="project__card--top">
-                                <div class="folder">
-                                    <svg class="folder__icon">
-                                    <use xlink:href="img/sprite.svg#icon-folder-open"></use>
-                                </svg>
-                                </div>
-                                <div class="project-links">
-                                    <a href="" class="git">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-github"></use>
-                                    </svg>
-                                    </a>
-                                    <a href="" class="demo">
-                                        <svg class="header__icons">
-                                        <use xlink:href="img/sprite.svg#icon-new-tab"></use>
-                                    </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="project__card--title">Integrating </h3>
-                            <div class="project__card--description ">
-                                <p>Building a custom multisite compatible WordPress plugin to build global search with Algolia</p>
-                            </div>
-                        </header>
-                        <footer>
-                            <ul class="project__card--tech-list ">
-                                <li>Algolia</li>
-                                <li>WordPress</li>
-                                <li>PHP</li>
-                            </ul>
-                        </footer>
-                    </div>
-
-                </div>
             </div>
-
-
         </section>
-        <section class="section section__five">
+        <section class="section section__five" id="contact">
             <div>
                 <h2 class="numbered-heading ">What's Next</h2>
                 <h2 class="mid-heading ">Get In Touch</h2>
-                <p class="info ">I am currently in serach of remote friendly Junior Software Developer role. I am more than happy to work with a team. Kindly reach out by saying hello</p>
-                <button class="btn "> Say hello</button>
-            </div>
-
+                <p class="info ">I am currently in serach of remote friendly Junior Software Developer role. I am more than happy to work with a team. Kindly reach out by saying hello</p><button class="btn ">Say hello</button></div>
         </section>
     </main>
-
     <footer class="footer ">
-
         <div class="footer__copyright ">
             <a href=" " class="footer__copyright--copyright ">
-                <p>Designed & Built by Adewuyi Taofeeq</p>
-                &copy; 2020. All Rights Reserved
-            </a>
+                <p>Designed & Built by Adewuyi Taofeeq</p>&copy; 2020. All Rights Reserved </a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
     <script>
         $(document).ready(function() {
-            // var prevScrollpos = window.pageYOffset;
-            // window.onscroll = function() {
-            //     var currentScrollPos = window.pageYOffset;
-            //     if (prevScrollpos > currentScrollPos) {
-            //         document.getElementById("header").style.top = "0";
-            //         // document.getElementById("header ").style.backgroundColor = "#3690C5 ";
-            //     } else {
-            //         document.getElementById("header").style.top = "-8rem";
-            //     }
-            //     prevScrollpos = currentScrollPos;
-            //     // document.getElementById("header ").style.backgroundColor = "#3690C5 ";
-            // }
 
+                // var prevScrollpos = window.pageYOffset;
+                // window.onscroll = function() {
+                //     var currentScrollPos = window.pageYOffset;
+                //     if (prevScrollpos > currentScrollPos) {
+                //         document.getElementById("header").style.top = "0";
+                //         // document.getElementById("header ").style.backgroundColor = "#3690C5 ";
+                //     } else {
+                //         document.getElementById("header").style.top = "-8rem";
+                //     }
+                //     prevScrollpos = currentScrollPos;
+                //     // document.getElementById("header ").style.backgroundColor = "#3690C5 ";
+                // }
+            }
 
-        });
-
+        );
         // function openPage(pageName, elmnt) {
         //     // Hide all elements with class="tabcontent " by default */
         //     var i, tabcontent, tablinks;
@@ -472,7 +265,6 @@
         //     for (i = 0; i < tabcontent.length; i++) {
         //         tabcontent[i].style.display = "none";
         //     }
-
         //     // Remove the background color of all tablinks/buttons
         //     tablinks = document.getElementsByClassName("tabs__link");
         //     for (i = 0; i < tablinks.length; i++) {
@@ -483,12 +275,12 @@
         //     // Add the specific color to the button used to open the tab content
         //     // elmnt.style.borderLeft = "2px solid #b81226 ";
         // }
-
         // // Get the element with id="defaultOpen " and click on it
         // document.getElementById("defaultOpen ").click();
-
         function openPage(evt, cityName) {
-            var i, x, tablinks;
+            var i,
+                x,
+                tablinks;
             x = document.getElementsByClassName("tabcontent");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
@@ -502,7 +294,6 @@
         }
     </script>
 </body>
-
 
 </html>
 

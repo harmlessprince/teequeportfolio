@@ -1,11 +1,5 @@
 .section__four {
     display: flex;
     flex-direction: column;
-    .other__projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-        gap: 2rem;
-        position: relative;
-        margin-top: 5rem;
-    }
+    background-color: #141215;
 }
