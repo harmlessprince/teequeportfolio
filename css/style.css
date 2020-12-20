@@ -540,9 +540,11 @@ main {
     .cards .card__tech--list {
       list-style-type: none;
       display: flex;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      flex-wrap: wrap; }
       .cards .card__tech--list > :not(:last-child) {
-        margin-right: 1rem; }
+        margin-right: 1rem;
+        margin-bottom: .5rem; }
     .cards .card:hover, .cards .card:active {
       transform: translateY(-1rem); }
 
