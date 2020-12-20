@@ -19,20 +19,24 @@
 </head>
 
 <body class="">
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
+
     <header class="header" id="header">
         <nav class="navigation" id="navigation"><a href="" class="navbrand">OlaTeeque</a>
             <!-- <img class="navigation__logo" src="img/logo.png" alt="Olateeque">-->
             <ul class="navigation__items">
+                <li class="navigation__item icon">
+                    <a href="javascript:void(0);" class="navigation__item--icon" onclick="myFunction()">
+                        <svg class="">
+                            <use xlink:href="img/sprite.svg#icon-menu"></use>
+                        </svg>
+                    </a>
+                </li>
                 <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
                 <li class="navigation__item"><a href="#experince" class="navigation__link">Experience</a></li>
                 <li class="navigation__item"><a href="#works" class="navigation__link">Works</a></li>
                 <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
                 <li class="navigation__item"><button class="btn resume-btn ">Resume</button></li>
+
             </ul>
         </nav>
     </header>
@@ -378,25 +382,16 @@
             }
 
         );
-        // function openPage(pageName, elmnt) {
-        //     // Hide all elements with class="tabcontent " by default */
-        //     var i, tabcontent, tablinks;
-        //     tabcontent = document.getElementsByClassName("tabcontent ");
-        //     for (i = 0; i < tabcontent.length; i++) {
-        //         tabcontent[i].style.display = "none ";
-        //     }
-        //     // Remove the background color of all tablinks/buttons
-        //     tablinks = document.getElementsByClassName("tabs__link ");
-        //     for (i = 0; i < tablinks.length; i++) {
-        //         tablinks[i].style.borderLeft = " ";
-        //     }
-        //     // Show the specific tab content
-        //     document.getElementById(pageName).style.display = "block ";
-        //     // Add the specific color to the button used to open the tab content
-        //     // elmnt.style.borderLeft = "2px solid #b81226 ";
-        // }
-        // // Get the element with id="defaultOpen " and click on it
-        // document.getElementById("defaultOpen ").click();
+
+        function myFunction() {
+            var x = document.getElementById("header");
+            if (x.className === "header") {
+                x.className += " responsive";
+            } else {
+                x.className = "header";
+            }
+        }
+
         function openPage(evt, cityName) {
             var i,
                 x,

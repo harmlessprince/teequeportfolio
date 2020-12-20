@@ -5,22 +5,26 @@
     position: relative;
     width: 100%;
     font-size: 1.7rem;
-    // &__logo {
-    //     width: 10rem;
-    //     height: 5rem;
-    //     align-self: center;
-    //     &--lastname {
-    //         //  $color-primary
-    //     }
-    // }
     &__items {
         list-style: none;
         display: flex;
+        .icon {
+            display: none;
+        }
         // grid-column: 3 / span 3;
     }
     &__item {
         &--button {
             align-self: center;
+        }
+        &--icon {
+            align-self: center;
+            svg {
+                align-self: center;
+                width: 2rem;
+                height: 2rem;
+                fill: white;
+            }
         }
         &:not(:last-child) {
             margin-right: 2rem;
@@ -43,38 +47,27 @@
         color: $color-primary-dark;
         background-color: rgba($color-primary, .2);
     }
-    // &__socials {
-    //     font-size: 1rem;
-    //     display: flex;
-    //     grid-column: 6 / -1;
-    //     display: grid;
-    //     grid-template-columns: repeat(6, 1fr);
-    //     align-items: center;
-    //     justify-items: center;
-    //     color: #fff;
-    //     // grid-column-gap: 3rem;
-    //     svg {
-    //         width: 1.5rem;
-    //         height: 1.5rem;
-    //         fill: #fff;
-    //     }
-    //     .message {
-    //         background-color: $color-primary-dark;
-    //         width: 3rem;
-    //         height: 3rem;
-    //         border-radius: 50%;
-    //         grid-column: 5 / span 2;
-    //         justify-self: end;
-    //         display: grid;
-    //         justify-items: center;
-    //         align-items: center;
-    //         svg {
-    //             fill: $color-secondary;
-    //         }
-    //     }
-    // }
-    // &__number {
-    //     color: $color-primary-dark;
-    //     margin-right: .5rem;
-    // }
+}
+
+@include respond(phone) {
+    .header .navigation .navigation__items li:not(:first-child) {
+        display: none;
+    }
+    .header .navigation .navigation__items .icon {
+        display: block;
+    }
+}
+
+@include respond(phone) {
+    .header .responsive {
+        position: relative;
+    }
+    .header .responsive .navigation .navigation__items .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header .responsive .navigation ul li {
+        display: block;
+    }
 }
