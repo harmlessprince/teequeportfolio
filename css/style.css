@@ -68,7 +68,6 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 8rem;
   flex: 0 0 100%; }
   main > :not(:last-child) {
     border-bottom: 1px solid #fff; }
@@ -447,10 +446,9 @@ main {
   left: 0;
   padding: 0 5rem;
   transition: all .6s;
-  background-color: #24292E;
+  background-color: transparent;
   width: 100%;
-  z-index: 1000;
-  background-image: linear-gradient(to right, rgba(184, 18, 38, 0.7) 1%, rgba(0, 0, 0, 0.9)), url(/img/bglarge.jpg); }
+  z-index: 1000; }
   @media only screen and (max-width: 56.25em) {
     .header {
       padding: 0 2rem; } }
@@ -459,6 +457,9 @@ main {
     border: 1px solid #fff; }
     .header .resume-btn:hover {
       background-color: #DF162D; }
+
+.nav__scrolled {
+  background-image: linear-gradient(to right, rgba(184, 18, 38, 0.7) 1%, rgba(0, 0, 0, 0.9)), url(/img/bglarge.jpg); }
 
 .section__one {
   z-index: 1;

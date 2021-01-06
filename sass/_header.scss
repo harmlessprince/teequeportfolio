@@ -13,12 +13,11 @@
         padding: 0 2rem;
     }
     transition: all .6s;
-    // background-color: #F1F1F1; 
-    background-color: #24292E;
+    background-color: transparent; // background-color: #F1F1F1; 
+    // background-color: #24292E;
     width: 100%;
     z-index: 1000;
-    background-image: linear-gradient(to right, rgba($color-primary-dark, .7)1%, rgba(black, .9)),
-    url(/img/bglarge.jpg);
+    // 
     .resume-btn {
         align-self: start;
         border: 1px solid #fff;
@@ -26,4 +25,8 @@
             background-color: $color-primary-light;
         }
     }
+}
+
+.nav__scrolled {
+    background-image: linear-gradient(to right, rgba($color-primary-dark, .7)1%, rgba(black, .9)), url(/img/bglarge.jpg);
 }
