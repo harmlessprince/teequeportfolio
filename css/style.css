@@ -514,7 +514,7 @@ main {
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
-  min-height: calc(100vh - 8rem); }
+  height: 100%; }
   @media only screen and (max-width: 56.25em) {
     .section__one {
       height: 100%; } }
@@ -733,8 +733,7 @@ main {
   align-items: center;
   text-align: center;
   color: #24292E;
-  background-color: #FCE6CE;
-  min-height: 50vh; }
+  background-color: #FCE6CE; }
   .section__five p,
   .section__five button {
     margin-bottom: 3rem; }
