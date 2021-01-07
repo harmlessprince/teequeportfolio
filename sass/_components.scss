@@ -38,7 +38,7 @@
     background-color: $color-primary-dark;
     border: 1px solid $color-primary-dark;
     border-radius: .5rem;
-    padding: 1rem 1.75rem;
+    padding: 1.75rem 3rem;
     line-height: 1;
     text-decoration: none;
     outline: none;
@@ -66,6 +66,7 @@
 .project {
     padding: 3rem 3rem;
     display: grid;
+    text-align: left;
     grid-template-columns: repeat(12, 1fr);
     &-content {
         grid-column: 7/-1;
@@ -172,6 +173,14 @@
 
 .self-align-end {
     align-self: flex-end;
+}
+
+.self-align-start {
+    align-self: flex-start;
+}
+
+.self-align-center {
+    align-self: center;
 }
 
 .navbrand {

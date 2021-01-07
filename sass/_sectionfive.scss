@@ -4,10 +4,22 @@
     justify-items: center;
     align-items: center;
     text-align: center;
+    color: $color-primary;
+    background-color: #FCE6CE;
     // align-content: space-around;
-    height: 50vh;
+    min-height: 50vh;
     p,
     button {
         margin-bottom: 3rem;
     }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // max-width: 60rem;
+    // background-color: brown;
+    justify-content: center;
+    align-items: center;
 }

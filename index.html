@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="img/png" href="img/favicon.png">
@@ -21,34 +18,70 @@
 <body class="" onload="spinner()">
     <div id="loader"></div>
     <div class="parent" id="parent" style="display:none;">
+
+
         <header class="header" id="header">
+            <nav class="responsive-navigation">
+                <a href="#" class="close-menu">
+                    <svg class="icon icon-menu"><use xlink:href="/img/sprite.svg#icon-close"></use></svg>
+                </a>
+                <ul class="responsive-navigation__items">
+                    <li class="responsive-navigation__item">
+                        <a href="#home " class="responsive-navigation__link ">Home</a>
+                    </li>
+                    <li class="responsive-navigation__item ">
+                        <a href="#about " class="responsive-navigation__link ">About</a>
+                    </li>
+                    <li class="responsive-navigation__item ">
+                        <a href="#experience " class="responsive-navigation__link "> Experience</a>
+                    </li>
+                    <li class="responsive-navigation__item ">
+                        <a href="#works " class="responsive-navigation__link ">Works</a>
+                    </li>
+                    <li class="responsive-navigation__item ">
+                        <a href="#contact " class="responsive-navigation__link ">Contact</a>
+                    </li>
+                    <li class="responsive-navigation__item ">
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download="Adewuyi's Resume">
+                            <button class="btn resume-btn ">Resume</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <nav class="navigation" id="navigation"><a href="" class="navbrand">OlaTeeque</a>
                 <!-- <img class="navigation__logo" src="img/logo.png" alt="Olateeque">-->
                 <ul class="navigation__items">
                     <li class="navigation__item icon">
-                        <a href="javascript:void(0);" class="navigation__item--icon" onclick="myFunction()">
-                            <svg class="">
-                            <use xlink:href="img/sprite.svg#icon-menu"></use>
+                        <a href="#" class="navigation__item--icon">
+                            <svg class="open-menu">
+                            <use xlink:href="img/sprite.svg#icon-menu "></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-                    <li class="navigation__item"><a href="#experince" class="navigation__link">Experience</a></li>
-                    <li class="navigation__item"><a href="#works" class="navigation__link">Works</a></li>
-                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
-                    <li class="navigation__item"><button class="btn resume-btn ">Resume</button></li>
+                    <li class="navigation__item "><a href="#home " class="navigation__link ">Home</a></li>
+                    <li class="navigation__item "><a href="#about " class="navigation__link ">About</a></li>
+                    <li class="navigation__item "><a href="#experince " class="navigation__link ">Experience</a></li>
+                    <li class="navigation__item "><a href="#works " class="navigation__link ">Works</a></li>
+                    <li class="navigation__item "><a href="#contact " class="navigation__link ">Contact</a></li>
+                    <li class="navigation__item ">
+                        <a href="/resume.pdf " target="_blank " rel="noopener noreferrer " download="Adewuyi 's Resume">
+                            <button class="btn resume-btn ">Resume</button>
+                        </a>
+
+                    </li>
 
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="section section__one ptb animate-bottom" id="">
+            <section class="section section__one ptb animate-bottom" id="home">
                 <div class="container">
                     <div class="hero-content">
                         <div class="hero-content__introduction">
                             <h1 class="big-heading">Hi! I'm Adewuyi Taofeeq</h1>
-                            <h4 class="mid-heading">Backend Developer/IT Technician & Technical Writer</h4>
-                            <p class="summary ">For 1+year(s), I have specilaised in back-end development (and occasionally designing) exceptional websites, web apps and providing IT support for both individual and organizations for over 3+years</p><button class="btn hero-content__introduction--btn ">get in touch</button></div>
+                            <h4 class="mid-heading">Full Stack Developer/IT Technician & Technical Writer</h4>
+                            <p class="summary ">For 1+ year(s), I have specilaised in back-end development (and occasionally designing) exceptional websites, web apps and providing IT support for both individual and organizations for over 3+ years</p>
+                            <a href="mailto:realolamilekan@gmail.com"><button class="btn hero-content__introduction--btn ">get in touch</button></a></div>
                         <div class="hero-content__image"><img src="img/programmer.svg" alt="Trulli" style="width: 100%;"></div>
                     </div>
                 </div>
@@ -59,7 +92,7 @@
                     <div class="about">
                         <div class="about__image"><img src="img/undrawimage.svg " alt=" " class="about__image--picture "></div>
                         <div class="about__introduction">
-                            <p class="about__introduction--info ">A computer science graduate, software developer and IT support specilist based in Nigeria. I enjoy creating things that live on the internet, wether that be websites, applications or anything between. </p>
+                            <p class="about__introduction--info ">A software developer and IT support specilist based in Nigeria. I enjoy creating things that live on the internet, wether that be websites, applications or anything between. </p>
                             <p class="about__introduction--info ">My goal is to always build products that help solve tasks that can be automated and make life easier. I derive great joy in providing IT support to put smile on the faces of cleint</p>
                             <p class="about__introduction--info ">Here are a few technologies I've been working with recently:</p>
                             <ul class="list info ">
@@ -136,7 +169,7 @@
                 <div class="container">
                     <div class="projects">
                         <span class="sm-heading fw-5 self-align-end">Featured Projects</span>
-                        <h2 class=" numbered-heading self-align-end">Stuffs I've Built</h2>
+                        <h2 class=" numbered-heading self-align-end">Stuffs I've Built & Worked On</h2>
                         <div class="cards ">
                             <div class="card ">
                                 <header>
@@ -147,12 +180,12 @@
                                         </svg>
                                         </div>
                                         <div class="card__header--links ">
-                                            <a href=" " class="git ">
+                                            <a href="https://github.com/harmlessprince/PayrollSystem-Laravel-" class="git" target="_blank">
                                                 <svg class="card__header--links__icon ">
                                                 <use xlink:href="img/sprite.svg#icon-github "></use>
                                             </svg>
                                             </a>
-                                            <a href=" " class="demo ">
+                                            <a href="https://payrollsystemv1.herokuapp.com/" class="demo " target="_blank">
                                                 <svg class="card__header--links__icon ">
                                                 <use xlink:href="img/sprite.svg#icon-new-tab "></use>
                                             </svg>
@@ -169,7 +202,40 @@
                                         <li>Laravel(PHP)</li>
                                         <li>Javascript</li>
                                         <li>JQuery</li>
-                                        <li>HTML/CSS</li>
+                                        <li>HTML/CSS framework
+                                        </li>
+                                    </ul>
+                                </footer>
+                            </div>
+                            <div class="card">
+                                <header>
+                                    <div class="card__header ">
+                                        <div class="card__header--folder ">
+                                            <svg class="card__header--folder__icon ">
+                                            <use xlink:href="img/sprite.svg#icon-folder-open "></use>
+                                        </svg>
+                                        </div>
+                                        <div class="card__header--links ">
+
+                                            <a href="https://investment.teksglobal.com.ng/" class="demo " target="_blank">
+                                                <svg class="card__header--links__icon ">
+                                                <use xlink:href="img/sprite.svg#icon-new-tab "></use>
+                                            </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="card__title ">Investments System(teksglobal)</h3>
+                                    <div class="card__description ">
+                                        <p>
+                                            An investment platform that has authentication system,with investors having the ability to apply for loans, withdraw investments as at when. the paystack mode of payemtn is implimented in this project. <br>                                            <br> <strong> NOTE(This was a team work)</strong>
+                                        </p>
+                                    </div>
+                                </header>
+                                <footer>
+                                    <ul class="card__tech--list ">
+                                        <li>Laravel(PHP)</li>
+                                        <li>JQuery</li>
+                                        <li>Bootstrap framework</li>
                                     </ul>
                                 </footer>
                             </div>
@@ -182,29 +248,25 @@
                                         </svg>
                                         </div>
                                         <div class="card__header--links ">
-                                            <a href=" " class="git ">
+                                            <a href="https://github.com/harmlessprince/laravel_api_authentication_template" class="git " target="_blank">
                                                 <svg class="card__header--links__icon ">
                                                 <use xlink:href="img/sprite.svg#icon-github "></use>
                                             </svg>
                                             </a>
-                                            <a href=" " class="demo ">
-                                                <svg class="card__header--links__icon ">
-                                                <use xlink:href="img/sprite.svg#icon-new-tab "></use>
-                                            </svg>
-                                            </a>
+
                                         </div>
                                     </div>
-                                    <h3 class="card__title ">Payroll Management System</h3>
+                                    <h3 class="card__title ">Laravel API Template</h3>
                                     <div class="card__description ">
-                                        <p> A mini managament system that automatically calculate taxes & create payslips, monitors leave request of employess. It is ideal for Business owners. low-cost monthly payments</p>
+                                        <p>
+                                            This API template is fresh, well documented laravel 8 application, that uses laravel passport for authentication with login, logut, register, forgot password, reset password, verification of email address functionalities.
+                                        </p>
                                     </div>
                                 </header>
                                 <footer>
                                     <ul class="card__tech--list ">
                                         <li>Laravel(PHP)</li>
-                                        <li>Javascript</li>
-                                        <li>JQuery</li>
-                                        <li>HTML/CSS</li>
+                                        <li>Laravel Passport</li>
                                     </ul>
                                 </footer>
                             </div>
@@ -217,29 +279,28 @@
                                         </svg>
                                         </div>
                                         <div class="card__header--links ">
-                                            <a href=" " class="git ">
-                                                <svg class="card__header--links__icon ">
-                                                <use xlink:href="img/sprite.svg#icon-github "></use>
-                                            </svg>
-                                            </a>
-                                            <a href=" " class="demo ">
+                                            <a href="https://cmp.ng/" class="demo" target="_blank">
                                                 <svg class="card__header--links__icon ">
                                                 <use xlink:href="img/sprite.svg#icon-new-tab "></use>
                                             </svg>
                                             </a>
+
                                         </div>
                                     </div>
-                                    <h3 class="card__title ">Payroll Management System</h3>
+                                    <h3 class="card__title ">An Automobile Store(CMP)</h3>
                                     <div class="card__description ">
-                                        <p> A mini managament system that automatically calculate taxes & create payslips, monitors leave request of employess. It is ideal for Business owners. low-cost monthly payments</p>
+                                        <p>
+                                            CMP is a nigerian online market place for the developin needs of automative industry. <br><br> I was involved in this project to fix bugs and make adjustment as the customer required.
+                                        </p>
                                     </div>
                                 </header>
                                 <footer>
                                     <ul class="card__tech--list ">
-                                        <li>Laravel(PHP)</li>
-                                        <li>Javascript</li>
+                                        <li>Vanilla PHP</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
                                         <li>JQuery</li>
-                                        <li>HTML/CSS</li>
+                                        <li>Javascript</li>
                                     </ul>
                                 </footer>
                             </div>
@@ -252,126 +313,78 @@
                                         </svg>
                                         </div>
                                         <div class="card__header--links ">
-                                            <a href=" " class="git ">
+                                            <a href="https://github.com/harmlessprince/eddie-homepage" class="git" target="_blank">
                                                 <svg class="card__header--links__icon ">
                                                 <use xlink:href="img/sprite.svg#icon-github "></use>
                                             </svg>
                                             </a>
-                                            <a href=" " class="demo ">
+                                            <a href="https://eddiehomepage.netlify.app/" class="demo" target="_blank">
                                                 <svg class="card__header--links__icon ">
                                                 <use xlink:href="img/sprite.svg#icon-new-tab "></use>
                                             </svg>
                                             </a>
                                         </div>
                                     </div>
-                                    <h3 class="card__title ">Payroll Management System</h3>
+                                    <h3 class="card__title ">Eddie Home Page</h3>
                                     <div class="card__description ">
-                                        <p> A mini managament system that automatically calculate taxes & create payslips, monitors leave request of employess. It is ideal for Business owners. low-cost monthly payments</p>
+                                        <p> A one page portfolio template with home, services, works, clients and contact section. This was devloped from a figma design made by devchallenges.io</p>
                                     </div>
                                 </header>
                                 <footer>
                                     <ul class="card__tech--list ">
-                                        <li>Laravel(PHP)</li>
                                         <li>Javascript</li>
-                                        <li>JQuery</li>
-                                        <li>HTML/CSS</li>
-                                    </ul>
-                                </footer>
-                            </div>
-                            <div class="card ">
-                                <header>
-                                    <div class="card__header ">
-                                        <div class="card__header--folder ">
-                                            <svg class="card__header--folder__icon ">
-                                            <use xlink:href="img/sprite.svg#icon-folder-open "></use>
-                                        </svg>
-                                        </div>
-                                        <div class="card__header--links ">
-                                            <a href=" " class="git ">
-                                                <svg class="card__header--links__icon ">
-                                                <use xlink:href="img/sprite.svg#icon-github "></use>
-                                            </svg>
-                                            </a>
-                                            <a href=" " class="demo ">
-                                                <svg class="card__header--links__icon ">
-                                                <use xlink:href="img/sprite.svg#icon-new-tab "></use>
-                                            </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="card__title ">Payroll Management System</h3>
-                                    <div class="card__description ">
-                                        <p> A mini managament system that automatically calculate taxes & create payslips, monitors leave request of employess. It is ideal for Business owners. low-cost monthly payments</p>
-                                    </div>
-                                </header>
-                                <footer>
-                                    <ul class="card__tech--list ">
-                                        <li>Laravel(PHP)</li>
-                                        <li>Javascript</li>
-                                        <li>JQuery</li>
-                                        <li>HTML/CSS</li>
-                                    </ul>
-                                </footer>
-                            </div>
-                            <div class="card ">
-                                <header>
-                                    <div class="card__header ">
-                                        <div class="card__header--folder ">
-                                            <svg class="card__header--folder__icon ">
-                                            <use xlink:href="img/sprite.svg#icon-folder-open "></use>
-                                        </svg>
-                                        </div>
-                                        <div class="card__header--links ">
-                                            <a href=" " class="git ">
-                                                <svg class="card__header--links__icon ">
-                                                <use xlink:href="img/sprite.svg#icon-github "></use>
-                                            </svg>
-                                            </a>
-                                            <a href=" " class="demo ">
-                                                <svg class="card__header--links__icon ">
-                                                <use xlink:href="img/sprite.svg#icon-new-tab "></use>
-                                            </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="card__title ">Payroll Management System</h3>
-                                    <div class="card__description ">
-                                        <p> A mini managament system that automatically calculate taxes & create payslips, monitors leave request of employess. It is ideal for Business owners. low-cost monthly payments</p>
-                                    </div>
-                                </header>
-                                <footer>
-                                    <ul class="card__tech--list ">
-                                        <li>Laravel(PHP)</li>
-                                        <li>Javascript</li>
-                                        <li>JQuery</li>
-                                        <li>HTML/CSS</li>
+                                        <li>HTML </li>
+                                        <li>S(CSS)</li>
                                     </ul>
                                 </footer>
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </section>
+            <section class="section section__five ptb" id="contact">
+                <div class="container">
+                    <div class="contact">
+                        <h2 class="numbered-heading self-align-center mb-lg">
+                            Get in Tough</h2>
+
+                        <p class="info ">I am currently in serach of remote friendly Junior Software Developer role. I am more than happy to work with a team. Kindly reach out by saying hello</p>
+                        <a href="mailto:realolamilekan@gmail.com">
+                            <button class="btn ">Say hello</button>
+                        </a>
+                    </div>
 
                 </div>
-            </section>
-            <section class="section section__five " id="contact ">
-                <div>
-                    <h2 class="numbered-heading ">What's Next</h2>
-                    <h2 class="mid-heading ">Get In Touch</h2>
-                    <p class="info ">I am currently in serach of remote friendly Junior Software Developer role. I am more than happy to work with a team. Kindly reach out by saying hello</p><button class="btn ">Say hello</button></div>
             </section>
         </main>
         <footer class="footer ">
             <div class="footer__copyright ">
-                <a href=" " class="footer__copyright--copyright ">
-                    <p>Designed & Built by Adewuyi Taofeeq</p>&copy; 2020. All Rights Reserved </a>
+                <p class="mb-md">Designed & Built by Adewuyi Taofeeq &copy;
+                    <span class="year"></span>. All Rights Reserved</p>
+                <div class="footer__social">
+                    <a href="https://github.com/harmlessprince" class="" target="_blank">
+                        <svg class="footer__social__icon ">
+                            <use xlink:href="img/sprite.svg#icon-github "></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adewuyi-taofeeq-olamilekan/" class="" target="_blank">
+                        <svg class="footer__social__icon ">
+                            <use xlink:href="img/sprite.svg#icon-linkedin "></use>
+                        </svg>
+                    </a>
+                    <a href="https://teeque.hashnode.dev/" class="demo" target="_blank">
+                        <svg class="footer__social__icon ">
+                            <use xlink:href="img/sprite.svg#icon-blogger"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous "></script>
     <script>
-        // $(document).ready(function() {
-        // });
         const header = document.querySelector(".header");
         const sectionOne = document.querySelector(".section__one");
         const sectionOneOptions = {};
@@ -422,6 +435,35 @@
             }
             document.getElementById(cityName).style.display = "block ";
             evt.currentTarget.className += " active ";
+        }
+
+        function getYear() {
+            let date = new Date();
+            var year = date.getFullYear();
+            document.querySelector('.year').innerHTML = year;
+        }
+        getYear();
+
+
+        const responsiveNavigation = document.querySelector('.responsive-navigation');
+        const openMenu = document.querySelector('.open-menu');
+        const closeMenu = document.querySelector('.close-menu');
+        var navLinks = document.querySelector('.responsive-navigation__link');
+        openMenu.addEventListener("click", displayResponsiveMenu);
+        closeMenu.addEventListener("click", closeResponsiveMenu);
+        navLinks.addEventListener("click", closeResponsiveMenu);
+
+        function displayResponsiveMenu(event) {
+            event.preventDefault();
+            console.log("event")
+            responsiveNavigation.style.height = "100%";
+
+        }
+
+        function closeResponsiveMenu(event) {
+            console.log("close")
+            event.preventDefault();
+            responsiveNavigation.style.height = "0px";
         }
     </script>
 </body>
