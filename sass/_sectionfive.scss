@@ -10,7 +10,7 @@
     // max-height: 50vh;
     p,
     button {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -22,4 +22,16 @@
     // background-color: brown;
     justify-content: center;
     align-items: center;
+    &__social {
+        &>* {
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+        }
+        &__icon {
+            width: 5rem;
+            height: 5rem;
+            fill: $color-primary;
+        }
+    }
 }

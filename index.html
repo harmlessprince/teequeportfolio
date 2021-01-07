@@ -120,7 +120,7 @@
                                 </ul>
                             </nav>
                             <div id="auxano" class="tabcontent w3-animate-left">
-                                <h3><span class="role ">IT Support (Intern)</span><span class="company ">@ <a href="# " class="inline-link ">Auxano Solutions Technology</a></span></h3>
+                                <h3><span class="role ">IT Support (Intern) @ </span><span class="company "> <a href="https://auxanosolutions.net/" class="inline-link ">Auxano Solutions Technology</a></span></h3>
                                 <p class="range ">June 2018 - December 2018</p>
                                 <div>
                                     <ul class="list">
@@ -134,7 +134,7 @@
                                 </div>
                             </div>
                             <div id="powerex" class="tabcontent w3-animate-left">
-                                <h3><span class="role ">IT Support Specialist</span><span class="company ">@ <a href="# " class="inline-link ">Powerex Nigeria Limited </a></span></h3>
+                                <h3><span class="role ">IT Support Specialist @ </span><span class="company "> <a href="# " class="inline-link ">Powerex Nigeria Limited </a></span></h3>
                                 <p class="range ">January 2020 - March 2020</p>
                                 <div>
                                     <ul class="list ">
@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <div id="alabian" class="tabcontent w3-animate-left" style="display: inline-block;">
-                                <h3><span class="role">Software Developer</span><span class="company ">@ <a href="# " class="inline-link">Alabian Solutions Technology</a></span></h3>
+                                <h3><span class="role">Software Developer @ </span><span class="company ">  <a href="# " class="inline-link">Alabian Solutions Technology</a></span></h3>
                                 <p class="range ">June 2020 - Present</p>
                                 <div>
                                     <ul class="list ">
@@ -381,39 +381,59 @@
                 <div class="container">
                     <div class="contact">
                         <h2 class="numbered-heading self-align-center mb-lg">
-                            Get in Tough</h2>
+                            Get in Touch</h2>
 
                         <p class="info ">I am currently in serach of remote friendly Junior Software Developer role. I am more than happy to work with a team. Kindly reach out by saying hello</p>
                         <a href="mailto:realolamilekan@gmail.com">
                             <button class="btn ">Say hello</button>
                         </a>
+                        <div class="contact__social">
+                            <a href="https://github.com/harmlessprince" class="" target="_blank">
+                                <svg class="contact__social__icon ">
+                                <use xlink:href="img/sprite.svg#icon-github "></use>
+                            </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/adewuyi-taofeeq-olamilekan/" class="" target="_blank">
+                                <svg class="contact__social__icon ">
+                                <use xlink:href="img/sprite.svg#icon-linkedin "></use>
+                            </svg>
+                            </a>
+                            <a href="https://teeque.hashnode.dev/" class="demo" target="_blank">
+                                <svg class="contact__social__icon ">
+                                <use xlink:href="img/sprite.svg#icon-blogger"></use>
+                            </svg>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
             </section>
         </main>
         <footer class="footer ">
-            <div class="footer__copyright ">
-                <p class="mb-md">Designed & Built by Adewuyi Taofeeq &copy;
-                    <span class="year"></span>. All Rights Reserved</p>
-                <div class="footer__social">
-                    <a href="https://github.com/harmlessprince" class="" target="_blank">
-                        <svg class="footer__social__icon ">
+            <div class="container">
+                <div class="footer__copyright ">
+                    <p class="mb-md">Designed & Built by Adewuyi Taofeeq &copy;
+                        <span class="year"></span>. All Rights Reserved</p>
+                    <!-- <div class="footer__social">
+                        <a href="https://github.com/harmlessprince" class="" target="_blank">
+                            <svg class="footer__social__icon ">
                             <use xlink:href="img/sprite.svg#icon-github "></use>
                         </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/adewuyi-taofeeq-olamilekan/" class="" target="_blank">
-                        <svg class="footer__social__icon ">
+                        </a>
+                        <a href="https://www.linkedin.com/in/adewuyi-taofeeq-olamilekan/" class="" target="_blank">
+                            <svg class="footer__social__icon ">
                             <use xlink:href="img/sprite.svg#icon-linkedin "></use>
                         </svg>
-                    </a>
-                    <a href="https://teeque.hashnode.dev/" class="demo" target="_blank">
-                        <svg class="footer__social__icon ">
+                        </a>
+                        <a href="https://teeque.hashnode.dev/" class="demo" target="_blank">
+                            <svg class="footer__social__icon ">
                             <use xlink:href="img/sprite.svg#icon-blogger"></use>
                         </svg>
-                    </a>
+                        </a>
+                    </div> -->
                 </div>
             </div>
+
         </footer>
     </div>
 
@@ -424,7 +444,7 @@
         const sectionOneOptions = {};
         const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
             entries.forEach(entry => {
-                console.log(entry)
+                // console.log(entry)
                 if (!entry.isIntersecting) {
                     header.classList.add("nav__scrolled");
                 } else {
@@ -465,7 +485,7 @@
             }
             tablinks = document.getElementsByClassName("tablink ");
             for (i = 0; i < x.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active ", " ");
+                tablinks[i].className = tablinks[i].className.replace(" active", " ");
             }
             document.getElementById(cityName).style.display = "block ";
             evt.currentTarget.className += " active ";

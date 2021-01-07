@@ -12,6 +12,7 @@
     // max-height: calc(100vh - 8rem);
     @include respond(tab-port) {
         height: 100%;
+        text-align: left;
     }
     .hero-content {
         display: flex;

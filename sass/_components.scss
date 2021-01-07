@@ -245,6 +245,9 @@
     // padding-left: 3rem;
     font-weight: 400;
     line-height: 3rem; // border: 1px solid #ffffff;
+    @include respond(tab-port) {
+        text-align: left;
+    }
     .company {
         color: $color-primary-dark;
     }
