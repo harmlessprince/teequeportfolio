@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 5rem;
+    @include respond(tab-port) {
+        padding: 0 2rem;
+    }
+    transition: all .6s;
+    background-color: transparent; // background-color: #F1F1F1; 
+    // background-color: #24292E;
+    width: 100%;
+    z-index: 100;
+    // 
+    .resume-btn {
+        align-self: start;
+        border: 1px solid #fff;
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+}
+
+.nav__scrolled {
+    background-image: linear-gradient(to right, rgba($color-primary-dark, .7)1%, rgba(black, .9)), url(/img/bglarge.jpg);
+}

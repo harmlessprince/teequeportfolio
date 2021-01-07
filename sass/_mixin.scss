@@ -1,32 +1,110 @@
 @mixin on-circle($item-count, $circle-size, $item-size) {
     position: relative;
-    width:  $circle-size;
+    width: $circle-size;
     height: $circle-size;
     padding: 0;
-    border-radius: 50%; 
-    list-style: none;       
-    
-    > * {
-      display: block;
-      position: absolute;
-      top:  50%; 
-      left: 50%;
-      width:  $item-size;
-      height: $item-size;
-      margin: -($item-size / 2);
-    
-      $angle: (360 / $item-count);
-      $rot: 0;
-  
-      @for $i from 1 through $item-count {
-        &:nth-of-type(#{$i}) {
-          transform: 
-            rotate($rot * 1deg) 
-            translate($circle-size / 2) 
-            rotate($rot * -1deg);
+    border-radius: 50%;
+    list-style: none;
+    >* {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $item-size;
+        height: $item-size;
+        margin: -($item-size / 2);
+        $angle: (360 / $item-count);
+        $rot: 0;
+        @for $i from 1 through $item-count {
+            &:nth-of-type(#{$i}) {
+                transform: rotate($rot * 1deg) translate($circle-size / 2) rotate($rot * -1deg);
+            }
+            $rot: $rot+$angle;
         }
-  
-        $rot: $rot + $angle;
-      }
     }
-  }
+}
+
+
+/*
+$breakpoint arguement chocies:
+-phone <= 600px
+-tab-port   <= 900px
+-tab-land <= 1200px
+-big-desk >= 1800px
+    ORDER: Base + Typography > general layout + grid > page layout > components
+*/
+
+//1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        } //600px/16px
+    }
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            @content;
+        } //900px/16px
+    }
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            @content;
+        } //1200px/16px
+    }
+    @if $breakpoint==big-desk {
+        @media (min-width: 112.5em) {
+            @content;
+        } //1800px/16px
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -10rem;
+        opacity: 0;
+    }
+    to {
+        bottom: 0rem;
+        opacity: 1;
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -10rem;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}

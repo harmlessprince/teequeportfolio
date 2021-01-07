@@ -1,0 +1,89 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 2rem;
+    position: relative;
+    margin-top: 5rem;
+    .card {
+        background-color: #5E3713;
+        display: flex;
+        // border: 1px solid $color-primary-dark;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        padding: 2rem 1.75rem;
+        border-radius: .5rem;
+        box-shadow: 0 2rem 3rem -1.5rem rgba($color-primary, .4);
+        transition: all .3s;
+        text-align: left;
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+        &>* {
+            margin-bottom: 2rem;
+        }
+        &__header {
+            // margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:not(:last-child) {
+                margin-bottom: 3.5rem;
+            }
+            &--folder {
+                margin-right: auto;
+                &__icon {
+                    width: 4rem;
+                    height: 4rem;
+                    fill: transparent;
+                    stroke: #DF7731;
+                    // margin-right: auto;
+                }
+            }
+            &--links {
+                &>* {
+                    &:not(:last-child) {
+                        margin-right: 2rem;
+                    }
+                }
+                &__icon {
+                    width: 2rem;
+                    height: 2rem;
+                    fill: #fff;
+                }
+            }
+        }
+        &__title {
+            margin: 0px 0px 1rem;
+            // color: var(--lightest-slate);
+            font-size: 2.2rem;
+        }
+        &__description {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            p {
+                // margin-bottom: 1rem;
+            }
+        }
+        &__tech--list {
+            list-style-type: none;
+            display: flex;
+            font-size: 1.3rem;
+            flex-wrap: wrap;
+            &>:not(:last-child) {
+                margin-right: 1rem;
+                margin-bottom: .5rem;
+            }
+        }
+        &:hover,
+        &:active {
+            transform: translateY(-1rem);
+        }
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}

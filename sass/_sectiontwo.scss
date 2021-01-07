@@ -1,0 +1,42 @@
+.section__two {
+    background-color: #FCE6CE;
+    // background-image: linear-gradient(to right, rgba(#000529, .9) 1%, rgba($color-primary-light, .9) 99%), url(/img/wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    // background-attachment: fixed;
+    background-size: fit;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: $color-primary;
+    // padding-top: 10rem;
+    // height: calc(100vh - 10rem); // clip-path: polygon(0 0, 100% 0%, 100% 83%, 0 100%);
+    .about {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        column-gap: 5rem;
+        &__heading {
+            align-self: flex-start;
+            color: black;
+        }
+        &__image {
+            width: 100%;
+            &--picture {
+                width: 100%;
+            }
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+        &__introduction {
+            color: black;
+            line-height: 3.2rem;
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            &>* {
+                margin-bottom: 1.8rem;
+            }
+        }
+    }
+}
